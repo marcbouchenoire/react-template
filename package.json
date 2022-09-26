@@ -1,0 +1,40 @@
+{
+  "name": "@marcbouchenoire/react-template",
+  "author": "Marc Bouchenoire",
+  "prettier": "@marcbouchenoire/prettier-config",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "prettier": "prettier --write --loglevel silent --ignore-path .eslintignore",
+    "lint": "yarn lint:eslint && yarn lint:stylelint && yarn lint:tsc && yarn lint:prettier",
+    "lint:eslint": "eslint '**/*.{cjs,mjs,ts,tsx}' --fix",
+    "lint:prettier": "yarn prettier '**/*.{cjs,mjs,ts,tsx,json,md,yml,css}'",
+    "lint:stylelint": "stylelint '**/*.css' --fix",
+    "lint:tsc": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "clsx": "latest",
+    "framer-motion": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@marcbouchenoire/eslint-config": "latest",
+    "@marcbouchenoire/prettier-config": "latest",
+    "@marcbouchenoire/stylelint-config": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "autoprefixer": "latest",
+    "eslint": "latest",
+    "postcss": "latest",
+    "postcss-nesting": "latest",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "latest",
+    "stylelint": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}

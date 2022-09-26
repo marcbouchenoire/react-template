@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "@marcbouchenoire/eslint-config",
+    "@marcbouchenoire/eslint-config/react"
+  ]
+}
