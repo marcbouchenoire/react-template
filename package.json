@@ -6,9 +6,9 @@
     "dev": "vite",
     "build": "vite build",
     "prettier": "prettier --write --loglevel silent --ignore-path .eslintignore",
-    "lint": "yarn lint:eslint && yarn lint:stylelint && yarn lint:tsc && yarn lint:prettier",
+    "lint": "pnpm lint:eslint && pnpm lint:stylelint && pnpm lint:tsc && pnpm lint:prettier",
     "lint:eslint": "eslint '**/*.{cjs,mjs,ts,tsx}' --fix",
-    "lint:prettier": "yarn prettier '**/*.{cjs,mjs,ts,tsx,json,md,yml,css}'",
+    "lint:prettier": "pnpm prettier '**/*.{cjs,mjs,ts,tsx,json,md,yml,css}'",
     "lint:stylelint": "stylelint '**/*.css' --fix",
     "lint:tsc": "tsc --project tsconfig.json"
   },
